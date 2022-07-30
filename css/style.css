@@ -10,6 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+
 img {
   max-width: 20%;
 }
@@ -207,6 +208,9 @@ header {
   width: 100%;
 }
 
+.animate__animated.animate__bounce {
+  --animate-duration: 5s;
+}
 
 .display-2 {
   margin-bottom: 1rem;
