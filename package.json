@@ -1,0 +1,23 @@
+{
+  "name": "mi-repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlorMirabella/Mi-repo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlorMirabella/Mi-repo/issues"
+  },
+  "homepage": "https://github.com/FlorMirabella/Mi-repo#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
