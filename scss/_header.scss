@@ -19,19 +19,14 @@ header {
   height: 0.2rem;
   display: block;
   margin: 0 auto;
-  background-color: #000000;
-}
+  background-color: $primary-color;
 
 .heading-line--download {
   margin-bottom: 3rem;
 }
 
 .nav {
-  width: 100%;
-  visibility: hidden;
-  height: 0;
-  position: absolute;
-  font-size: 1rem;
+@include nav;
 }
 
 .nav-toggle {
@@ -64,7 +59,7 @@ header {
   display: block;
   margin: 0 auto;
   height: 3px;
-  background: white;
+  background: $text-color;
 }
 
 .hamburger::before,
@@ -102,9 +97,7 @@ header {
 }
 
 .nav__link {
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
+  @include nav__link;
 }
 
 .nav__link:hover,
@@ -119,12 +112,12 @@ header {
 .nav__link--button {
   display: none;
   position: relative;
-  background: white;
+  background: $text-color;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.93rem 3.3rem 0.93rem 1.2rem;
   font-weight: 700;
-  border: 0.1rem solid white;
+  border: 0.1rem solid $text-color;
   border-radius: 50rem;
   cursor: pointer;
   z-index: 1;
@@ -134,7 +127,7 @@ header {
 
 .nav__link--button span {
   position: absolute;
-  background-color: #ec2f05;
+  background-color: $secondary-color;
   width: 2.5rem;
   height: 2.5rem;
   top: 50%;
@@ -144,17 +137,17 @@ header {
 }
 
 .nav__link--button span i {
-  color: white;
+  color: $text-color;
   font-size: 1rem;
   line-height: 2.5rem;
 }
 
 .nav__link--button:hover {
-  color: white;
+  color: $text-color;
 }
 
 .nav__link--button:hover span {
-  background-color: rgba(#000, 0.6);
+  background-color: ($primary-color, 0.6);
 }
 
 .nav__link--button:before {
@@ -185,4 +178,5 @@ header {
     opacity: 1;
     transform: translateX(0px);
   }
+ }
 }

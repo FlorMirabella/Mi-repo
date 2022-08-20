@@ -1,0 +1,13 @@
+@mixin nav {
+  width: 100%;
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+  font-size: 1rem;    
+}
+
+@mixin nav__link {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;    
+}

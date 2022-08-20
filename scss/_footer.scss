@@ -6,7 +6,7 @@
 }
 
 .footer-sm {
-  background-color: #212121;
+  background-color: map-get($map: $palette, $key:"success" );
   color: white;
 }
 

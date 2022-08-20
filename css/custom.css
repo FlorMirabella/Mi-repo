@@ -1,3 +1,71 @@
+/* variables */
+/* maps */
+/* extend */
+.description {
+  display: block;
+  font-size: 1rem;
+  margin-top: 1.2rem;
+  text-transform: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    position: relative;
+  }
+  .nav__list {
+    display: flex;
+    margin: 0;
+  }
+  .nav__item {
+    margin: 0 0 0 1.5rem;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .img-box {
+    margin-top: 0;
+    text-align: right;
+  }
+  .display-2 {
+    font-size: 3.4rem;
+  }
+  .display-2--description, .description {
+    font-size: 1rem;
+    display: inline-block;
+  }
+}
+@media (min-width: 1024px) {
+  .display-2 {
+    font-size: 4.5rem;
+  }
+  .display-2--description, .description {
+    font-size: 1.4rem;
+    display: inline-block;
+  }
+  .nav__link--button {
+    display: block;
+  }
+}
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -39,13 +107,6 @@ svg {
 .display-2--intro {
   display: inline-block;
   font-weight: 700;
-}
-
-.display-2--description {
-  display: block;
-  font-size: 1rem;
-  margin-top: 1.2rem;
-  text-transform: none;
 }
 
 .img-box {
@@ -94,22 +155,20 @@ header:hover {
   height: 0.2rem;
   display: block;
   margin: 0 auto;
-  background-color: #000000;
+  background-color: black;
+  /*ANIMACION APARECER DESDE LA DERECHA*/
 }
-
-.heading-line--download {
+.heading-line::before .heading-line--download {
   margin-bottom: 3rem;
 }
-
-.nav {
+.heading-line::before .nav {
   width: 100%;
   visibility: hidden;
   height: 0;
   position: absolute;
   font-size: 1rem;
 }
-
-.nav-toggle {
+.heading-line::before .nav-toggle {
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.1);
   width: 3rem;
@@ -122,76 +181,62 @@ header:hover {
   position: absolute;
   left: 0;
 }
-
-.nav-toggle:focus,
-.nav-toggle:hover {
+.heading-line::before .nav-toggle:focus,
+.heading-line::before .nav-toggle:hover {
   opacity: 0.75;
 }
-
-.hamburger {
+.heading-line::before .hamburger {
   width: 50%;
   position: relative;
 }
-
-.hamburger,
-.hamburger::before,
-.hamburger::after {
+.heading-line::before .hamburger,
+.heading-line::before .hamburger::before,
+.heading-line::before .hamburger::after {
   display: block;
   margin: 0 auto;
   height: 3px;
   background: white;
 }
-
-.hamburger::before,
-.hamburger::after {
+.heading-line::before .hamburger::before,
+.heading-line::before .hamburger::after {
   content: "";
   width: 100%;
 }
-
-.hamburger::before {
+.heading-line::before .hamburger::before {
   transform: translateY(-6px);
 }
-
-.hamburger::after {
+.heading-line::before .hamburger::after {
   transform: translateY(3px);
 }
-
-.nav--visible {
+.heading-line::before .nav--visible {
   visibility: visible;
   height: auto;
   position: relative;
 }
-
-.nav__list {
+.heading-line::before .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
-.nav__list--primary {
+.heading-line::before .nav__list--primary {
   margin-bottom: 2rem;
 }
-
-.nav__item {
+.heading-line::before .nav__item {
   margin-top: 0.75rem;
 }
-
-.nav__link {
+.heading-line::before .nav__link {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
 }
-
-.nav__link:hover,
-.nav__link:focus {
+.heading-line::before .nav__link:hover,
+.heading-line::before .nav__link:focus {
   opacity: 0.65;
 }
-
-.logo {
+.heading-line::before .logo {
   margin-right: 1rem;
 }
-
-.nav__link--button {
+.heading-line::before .nav__link--button {
   display: none;
   position: relative;
   background: white;
@@ -206,10 +251,9 @@ header:hover {
   overflow: hidden;
   transition: all 0.5s;
 }
-
-.nav__link--button span {
+.heading-line::before .nav__link--button span {
   position: absolute;
-  background-color: #ec2f05;
+  background-color: red;
   width: 2.5rem;
   height: 2.5rem;
   top: 50%;
@@ -217,22 +261,18 @@ header:hover {
   transform: translateY(-50%);
   border-radius: 50%;
 }
-
-.nav__link--button span i {
+.heading-line::before .nav__link--button span i {
   color: white;
   font-size: 1rem;
   line-height: 2.5rem;
 }
-
-.nav__link--button:hover {
+.heading-line::before .nav__link--button:hover {
   color: white;
 }
-
-.nav__link--button:hover span {
-  background-color: rgba(0, 0, 0, 0.6);
+.heading-line::before .nav__link--button:hover span {
+  background-color: black, 0.6;
 }
-
-.nav__link--button:before {
+.heading-line::before .nav__link--button:before {
   content: "";
   position: absolute;
   top: 0;
@@ -244,12 +284,9 @@ header:hover {
   border-radius: 0 0 50% 50%;
   transition: all 0.5s;
 }
-
-.nav__link--button:hover:before {
+.heading-line::before .nav__link--button:hover:before {
   height: 190%;
 }
-
-/*ANIMACION APARECER DESDE LA DERECHA*/
 @keyframes from-right {
   0% {
     opacity: 0;
@@ -260,6 +297,7 @@ header:hover {
     transform: translateX(0px);
   }
 }
+
 /*ESTILOS FOOTER*/
 .footer {
   padding-top: 1rem;
@@ -307,64 +345,6 @@ header:hover {
 .footer-bottom__copyright a:hover {
   color: #e70d0d;
   text-decoration: underline;
-}
-
-/*MEDIA QUERIES*/
-@media (min-width: 768px) {
-  .container {
-    width: 80%;
-  }
-  .nav-toggle {
-    display: none;
-  }
-  .nav {
-    visibility: visible;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: auto;
-    position: relative;
-  }
-  .nav__list {
-    display: flex;
-    margin: 0;
-  }
-  .nav__item {
-    margin: 0 0 0 1.5rem;
-  }
-  .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .img-box {
-    margin-top: 0;
-    text-align: right;
-  }
-  .display-2 {
-    font-size: 3.4rem;
-  }
-  .display-2--description {
-    font-size: 1rem;
-    display: inline-block;
-  }
-}
-@media (min-width: 1024px) {
-  .display-2 {
-    font-size: 4.5rem;
-  }
-  .display-2--description {
-    font-size: 1.4rem;
-    display: inline-block;
-  }
-  .nav__link--button {
-    display: block;
-  }
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=custom.css.map */
