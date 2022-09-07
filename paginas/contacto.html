@@ -10,7 +10,23 @@
     <title>Contacto</title>
     <meta name="keywords" content="banda, rock, tributo, musica, hardrock"/> 
 
-    
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- GOOGLE FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+        <!--ANIMATE CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <!-- HEADER DE MI SITIO WEB-->
@@ -27,7 +43,7 @@
           <nav class="nav">
             <ul class="nav__list nav__list--primary">
               <li class="nav__item">
-                <a class="nav__link" href="/">Inicio</a>
+                <a class="nav__link" href="../index.html">Inicio</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="../paginas/nosotros.html">Nosotros</a>
@@ -39,7 +55,7 @@
                 <a class="nav__link" href="../paginas/fechas.html">Fechas</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="paginas/Contacto.html">Contacto</a>
+                <a class="nav__link" href="Contacto.html">Contacto</a>
               </li>
             </ul>
           </nav>
@@ -60,59 +76,24 @@
           versions of Lorem Ipsum.
         </p>
       </div>
-      <form action="">
-        <fieldset>
-          <legend>Contacto</legend>
-          <label for="nombre">Nombre:</label>
-          <input
-            type="text"
-            name="nombre"
-            id="nombre"
-            placeholder="nombre"
-          />
-          <br />
-          <label for="apellido">Apellido:</label>
-          <input 
-            type="text" 
-            name="apellido" 
-            id="apellido"
-            placeholder="apellido"
-          />
-          <br />
-          <label for="apellido">Mail:</label>
-          <input 
-            type="text" 
-            name="mail" 
-            id="mail"
-            placeholder="mail"
-          />
-          <br />
-          <label for="apellido">Domicilio:</label>
-          <input 
-            type="text" 
-            name="domicilio" 
-            id="domicilio"
-            placeholder="domicilio"
-          />
-
-          <div>Enviar entrada a Domicilio</div>
-          <input type="checkbox" name="acepta" value="1" required />
-          <br />
-          <select name="fechas" id="fechas">
-            <option value="Sabado 2">Sabado 2</option>
-            <option value="Sabado 9">Sabado 9</option>
-            <option value="Sabado 16">Sabado 16</option>
-          </select>
-          <br />
-          <label for="comentario">Comentario</label>
-          <br />
-          <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-          <br />
-          <input type="submit" value="Enviar" />
-          <input type="reset" value="Limpiar formulario" />
-        </fieldset>
-      </form>
+      <form>
+       <label for="nombre">Nombre:</label>
+       <input id="nombre" name="nombre" placeholder="Nombre completo">
+       <label for="email">Email:</label>
+       <input id="email" name="email" type="email" placeholder="ejemplo@email.com">
+       <label for="mensaje">Mensaje:</label>
+       <textarea id="mensaje" name="mensaje" placeholder="Danos tu mensaje"></textarea>
+       <input id="submit" name="submit" type="submit" value="Enviar">
+</form>
+      
     </section>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#000000"
+            fill-opacity="1"
+            d="M0,96L48,117.3C96,139,192,181,288,176C384,171,480,117,576,122.7C672,128,768,192,864,197.3C960,203,1056,149,1152,144C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
     <!--COMIENZA EL FOOTER-->
     <footer class="footer">
       <div class="footer-sm">

@@ -97,12 +97,13 @@ header {
 }
 
 .nav__link {
-  @include nav__link;
+  color: #FF0000;
 }
 
 .nav__link:hover,
 .nav__link:focus {
   opacity: 0.65;
+  color: #FF0000;
 }
 
 .logo {
