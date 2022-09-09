@@ -1,14 +1,16 @@
 /*MEDIA QUERIES*/
-
 @media (min-width: 768px) {
   .container {
-    width: 80%;
+    width: 100%;
+    grid-template-areas: "header header";
+    grid-template-areas: "main main";
+    grid-template-areas: "footer footer";
   }
+
 
   .nav-toggle {
     display: none;
   }
-
   .nav {
     visibility: visible;
     display: flex;
@@ -17,48 +19,109 @@
     height: auto;
     position: relative;
   }
-
   .nav__list {
     display: flex;
     margin: 0;
   }
-
   .nav__item {
     margin: 0 0 0 1.5rem;
   }
-
+  .nav__link {
+    color: #ffffff;
+    text-decoration: none;
+  }
   .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .img-box {
     margin-top: 0;
     text-align: right;
   }
-
   .display-2 {
     font-size: 3.4rem;
   }
+  .display-2--description,
+  .description {
+    font-size: 1rem;
+    display: inline-block;
+  }
+}
+@media (min-width: 390px) {
+  .container {
+    width: 100%;
+    grid-template-areas: "header header" "main main" "footer main";
+  }
 
-  .display-2--description {
+  .nav-toggle {
+    display: none;
+  }
+  .nav {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    position: relative;
+  }
+  .nav__list {
+    display: flex;
+    margin: 0;
+  }
+  .nav__item {
+    margin: 0 0 0 1.5rem;
+  }
+  .nav__link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .img-box {
+    margin-top: 0;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+  }
+  .display-2 {
+    font-size: 3.4rem;
+  }
+  .display-2--description,
+  .description {
     font-size: 1rem;
     display: inline-block;
   }
 }
 
-@media (min-width: 1024px) {
-  .display-2 {
-    font-size: 4.5rem;
+@media only screen and (max-width: 480px) {
+  /* Smartphone view: 1 tile */
+  .box {
+    width: 100%;
+    padding-bottom: 100%;
   }
-
-  .display-2--description {
-    font-size: 1.4rem;
-    display: inline-block;
+}
+@media only screen and (max-width: 650px) and (min-width: 481px) {
+  /* Tablet view: 2 tiles */
+  .box {
+    width: 50%;
+    padding-bottom: 50%;
   }
-
-  .nav__link--button {
-    display: block;
+}
+@media only screen and (max-width: 1050px) and (min-width: 651px) {
+  /* Small desktop / ipad view: 3 tiles */
+  .box {
+    width: 33.3%;
+    padding-bottom: 33.3%;
+  }
+}
+@media only screen and (max-width: 1290px) and (min-width: 1051px) {
+  /* Medium desktop: 4 tiles */
+  .box {
+    width: 25%;
+    padding-bottom: 25%;
   }
 }
