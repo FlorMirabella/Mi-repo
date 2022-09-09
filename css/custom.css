@@ -380,13 +380,14 @@ label {
   display: block;
   margin-top: 20px;
   letter-spacing: 1px;
+  color: #000;
 }
 
 .principal {
   display: block;
   margin: 0 auto;
   width: 510px;
-  color: #ffffff;
+  color: #b70707;
 }
 
 form {
