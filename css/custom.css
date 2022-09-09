@@ -254,18 +254,21 @@ section.touch .boxInner.touchFocus .titleBox {
   }
 }
 
-.mes{
-text-decoration-color: #f6f6f6;
-}
 
 .img-box {
   margin-top: 2rem;
   text-align: center;
-  border: 1px solid white;
   text-decoration-color: #040404;
   color: #f6f6f6;
 }
 
+.date-table, .date-table th, .date-table td {
+  margin-top: 0;
+  text-align: right;
+  border: 1px solid white;
+  color: #ffffff;
+  text-align: center;
+  }
 
 .img-box img {
   animation: from-right 1.5s ease;
