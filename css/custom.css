@@ -14,7 +14,9 @@
   box-sizing: border-box;
 }
 
+html,
 body {
+  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
 
@@ -171,6 +173,7 @@ label {
   margin-top: 20px;
   letter-spacing: 1px;
   color: #000;
+  text-align: center;
 }
 
 .principal {
@@ -182,7 +185,7 @@ label {
 
 form {
   margin: 0 auto;
-  width: 400px;
+  width: 350px;
 }
 
 input,
